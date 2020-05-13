@@ -4,7 +4,7 @@ footer {
     background-image:url('../images/header.jpg');
     background-size:cover;
     .overlay {
-        background-color:rgba(0,0,0,0.9);
+        background-color:rgba(1,51,64,.9);
         color:#fff;
         padding:50px 0;
         h4{ 
@@ -106,6 +106,14 @@ footer {
                 }
             }
         }
+        @media (max-width:767px) {
+            .foot-news, .foot-quick, .foot-about {
+                margin-bottom: 40px;
+            }
+            .foot-news .media {
+                margin-bottom: 20px
+            }
+        }
     }
 }
 /* End Footer Section */
@@ -113,7 +121,7 @@ footer {
 /* Start Copyrights Section */
 
 .Copyright {
-    background: $sub-color;
+    background: $copyright-color;
     color: #fff;
     padding: 20px 0;
     .copy-links {

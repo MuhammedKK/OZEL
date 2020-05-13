@@ -1,6 +1,16 @@
 $(function () {
 
     /*-------------------------------------
+    Loading Page
+    -------------------------------------*/
+
+    window.onload = function() {
+        $('.spinner-box .spinner').fadeOut(200, function () {
+            $(this).parent().fadeOut(700);
+        });
+    }
+
+    /*-------------------------------------
     Animate Menu Bar
     -------------------------------------*/
 
@@ -10,18 +20,22 @@ $(function () {
         if($(this).hasClass('open')) {
             $(this).removeClass('fa-bars open');
             $(this).addClass('fa-times');
-
-            navLinks.each(function() {
-                navLinks.show(300);
-            });
+            navLinks.slideToggle(300);
         } else {
             $(this).removeClass('fa-times');
             $(this).addClass('fa-bars open');
-            navLinks.hide(300);
+            navLinks.slideToggle(300);
         }
     });
 
 
+    /*-------------------------------------
+    Animate Search Bar
+    -------------------------------------*/
+
+    $('.fa-search').click(function() {
+        $(".upper form").slideToggle(300);
+    });
 
     /*-------------------------------------
     Trigger Slick Plugin
