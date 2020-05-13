@@ -1,0 +1,79 @@
+/* Start Upper Navbar */
+.upper {
+    background-color:$sub-color;
+    color:#fff;
+    padding:15px 0 0;
+    .contacts {
+        .contact {
+            display:inline-block;
+            margin-right:5px;
+            padding:0 8px;
+            &:not(:last-of-type) {
+                border-right:2px solid #fff;
+            }
+            color:#fff;
+        }
+        @media (max-width:767px) {
+            .contact {
+                margin-bottom: 10px;
+            }      
+        }
+    }
+    .upper-social {
+        text-align: right;
+        li {
+            display:inline-block;
+            margin-left:10px;
+            a {
+                color:$sub-color;
+                background-color:#fff;
+                padding: 5px;
+                border-radius: 50%;
+            }
+            a.fa-search {
+                color:#fff;
+                background:none;
+            }
+        }
+    }
+    @media (max-width:767px) {
+        .upper-social {
+            margin-top:10px;
+            text-align: center;
+        }      
+    }
+}
+/* End Upper Navbar */
+
+/* Start Navbar Section */
+
+.navbar {
+    background: none;
+    padding:0;
+    .navbar-brand {
+        color:$main-color;
+        font-size: 40px;
+        &:hover {
+            color:$main-color;
+        }
+    }
+    .nav-link {margin-right:10px;display: none;}
+    .nav-link,.fa-bars  {
+        color:#fff !important;
+        font-size: 17px;
+    }
+    .fa-bars, .fa-times {
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+    @media (max-width:767px) {
+        .navbar-toggler-icon {
+            color:#fff !important;
+        }      
+    }
+}
+
+/* End Navbar Section */

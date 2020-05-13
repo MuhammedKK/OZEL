@@ -1,0 +1,126 @@
+
+/* Start Footer Section */
+footer {
+    background-image:url('../images/header.jpg');
+    background-size:cover;
+    .overlay {
+        background-color:rgba(0,0,0,0.9);
+        color:#fff;
+        padding:50px 0;
+        h4{ 
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+        p {
+            color:#999;
+            line-height: 1.8;
+        }
+        .foot-about {
+            .list-unstyled {
+                li {
+                    display:inline-block;
+                    margin-right:10px;
+                    a {
+                        color:$main-color;
+                        border:1px solid $main-color;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .foot-quick {
+            ul {
+                li {
+                    margin-bottom: 20px;
+                    &:before {
+                        content: '-';
+                        color:$main-color;
+                    }
+                    a {
+                        color:#fff;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .foot-news {
+            .media {
+                overflow: hidden;
+                img {
+                    margin-right:1%;
+                    width:40%;
+                }
+                .media-body {
+                    margin-left:10px;
+                    h5 {
+                        font-size: 14px;
+                        color: #999;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 14px;                    
+                    }
+                }
+            }
+        }
+        .foot-services {
+            ul {
+                display: inline-block;
+                li {
+                    margin-bottom: 20px;
+                    &:before {
+                        content: '-';
+                        color:$main-color;
+                    }
+                    a {
+                        color:#fff;
+                        margin-left: 10px;
+                    }
+                }
+                &:first-of-type {
+                    float: right;
+                }
+            }
+            form {
+                input {
+                    border: none;
+                    padding: 10px;
+                    font-size: 14px;
+                    background: #1b2223;
+                    color:#fff;
+                }
+                button {
+                    background-color: $main-color;
+                    border: 1px solid #1abc9c;
+                    color: #fff;
+                    padding: 8px 15px;
+                    margin-left: -5px;
+                    cursor: pointer;
+                }
+                ::placeholder {
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+/* End Footer Section */
+
+/* Start Copyrights Section */
+
+.Copyright {
+    background: $sub-color;
+    color: #fff;
+    padding: 20px 0;
+    .copy-links {
+        a {
+            color:#fff;
+        }
+    }
+}
+
+/* End Copyrights Section */

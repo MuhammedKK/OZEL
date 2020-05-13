@@ -1,0 +1,26 @@
+/* General Rules */
+$main-color:#2ecc71;
+$sub-color: #2c3e50 ;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+h2 {
+    font-size:40px;
+    color:$main-color;
+}
+a {
+    color:#000;
+    &:hover {
+        text-decoration: none;
+    }
+}
+img {
+    width:100%
+}
