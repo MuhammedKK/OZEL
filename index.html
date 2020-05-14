@@ -287,9 +287,13 @@
                 </section>
                 <section class="col-md-4 text-center">
                     <section class="steps-contacts">
-                        <a href="#">Phone</a>
-                        <a href="#">Email</a>
+                        <a class="active" href="#" data-class="phone">Phone</a>
+                        <a href="#" data-class="email">Email</a>
                     </section>
+                    <form class="contact-inputs" action="">
+                        <input type="email" name="email" placeholder="Enter Email" class="email form-control">
+                        <input type="text" name="phone" placeholder="Enter Phone" class="phone form-control">
+                    </form>
                     <a href="#" class="steps-mail">
                         <span>name@name.com</span>
                         <i class="fas fa-play"></i>
@@ -529,7 +533,7 @@
                         <form method="POST" action="">
                             <div class="form-group">
                               <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <input type="email" class="form-control" id="exampleInputEmail1">
                             </div>
                             <div class="form-group">
                               <label for="exampleInputPassword1">Password</label>

@@ -117,6 +117,7 @@ img {
 @media (max-width: 767px) {
   .upper .contacts .contact {
     margin-bottom: 10px;
+    font-size: 13px;
   }
 }
 .upper .upper-social {
@@ -495,8 +496,7 @@ header .overlay .header-content a i {
   border-radius: 30px;
 }
 .steps .steps-contacts a {
-  background-color: #fff;
-  color: #00d6a3;
+  color: #fff;
   display: inline-block;
   padding: 7px 20px;
   border-radius: 30px;
@@ -511,10 +511,24 @@ header .overlay .header-content a i {
   background-color: #00d6a3;
   color: #fff;
 }
+.steps .steps-contacts a.active {
+  background-color: #fff;
+  color: #00d6a3;
+}
+.steps .contact-inputs {
+  margin-top: 20px;
+}
+.steps .contact-inputs input {
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+.steps .contact-inputs .email {
+  display: none;
+}
 .steps .steps-mail {
   background-color: #fff;
   display: block;
-  margin-top: 80px;
+  margin-top: 40px;
   border-radius: 30px;
   padding: 14px 0;
 }
@@ -670,7 +684,7 @@ header .overlay .header-content a i {
     margin-bottom: 120px;
   }
   .testi .testi-boxes .client-info {
-    bottom: -35% !important;
+    bottom: -27% !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

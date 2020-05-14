@@ -300,8 +300,7 @@ header {
         display: inline-block;
         border-radius: 30px;
         a {
-            background-color: #fff;
-            color:$main-color;
+            color:#fff;
             display: inline-block;
             padding: 7px 20px;
             border-radius: 30px;
@@ -316,11 +315,25 @@ header {
                 color:#fff;
             }
         }
+        a.active {
+            background-color: #fff;
+            color: $main-color;
+        }
+    }
+    .contact-inputs {
+        margin-top: 20px;
+        input {
+            border-radius: 20px;
+            margin-bottom: 5px;
+        }
+        .email {
+            display: none;
+        }
     }
     .steps-mail {
         background-color: #fff;
         display: block;
-        margin-top: 80px;
+        margin-top: 40px;
         border-radius: 30px;
         padding: 14px 0;
         span {
@@ -485,7 +498,7 @@ header {
                 margin-bottom: 120px;
             }
             .client-info {
-                bottom: -35% !important;
+                bottom: -27% !important
             }   
         }
         @media (min-width:768px) and (max-width:991px) {

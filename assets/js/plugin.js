@@ -11,6 +11,18 @@ $(function () {
     }
 
     /*-------------------------------------
+    Add Class Active To Contact Inputs
+    -------------------------------------*/
+
+    $(".steps-contacts a").click(function (e) {
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+
+        $('.contact-inputs input').slideToggle();
+
+    });
+
+    /*-------------------------------------
     Animate Menu Bar
     -------------------------------------*/
 
