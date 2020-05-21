@@ -14,6 +14,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <!-- Start Search Popup -->
+    <div id="myOverlay" class="popup">
+        <span class="closebtn" title="Close Overlay">x</span>
+        <div class="overlay-content">
+          <form action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+    </div>
+    <!-- End Search Popup -->
+
     
     <!-- Start Loading Page -->
     <div class="spinner-box">
@@ -26,10 +39,10 @@
 
     <!-- Start Upper Bar Section -->
     <section class="upper">
-        <section class="container">
-            <section class="row">
-                <section class="col-sm-8">
-                    <section class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="contacts">
                         <a href="#" class="contact">
                             <i class="fas fa-phone-volume"></i>
                             <span>01121231321321</span>
@@ -42,9 +55,9 @@
                             <i class="fas fa-phone-volume"></i>
                             <span>01121231321321</span>
                         </a>
-                    </section>
-                </section>
-                <section class="col-sm-4">
+                    </div>
+                </div>
+                <div class="col-sm-4">
                     <ul class="list-unstyled upper-social">
                         <li><a class="fab fa-google-plus-g" href="#"></a></li>
                         <li><a class="fab fa-twitter" href="#"></a></li>
@@ -52,66 +65,46 @@
                         <li><a class="fab fa-youtube" href="#"></a></li>
                         <li><a class="fas fa-search" href="#"></a></li>
                     </ul>
-                </section>
-                <form action="">
-                    <input type="search" name="search" placeholder="Search" class="form-control">
-                </form>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End Upper Bar Section -->
 
     <!-- Start Header Section -->
 
     <header>
-        <section class="overlay">
-            <section class="container">
+        <div class="overlay">
+            <div class="container">
                 <!-- Start Navbar Section -->
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#">OZEL</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Techniques <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Our Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Media</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Q&A</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                        <i class="fas fa-bars open"></i>
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">OZEL</a>
                     </div>
+                    <ul class="links list-unstyled links-open">
+                        <li><a href="#">Techniques</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="articles.html">Q&A</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <i class="fas fa-times"></i>
+                    </ul>
+                    <i class="fas fa-bars open"></i>
                 </nav>
                 <!-- End Navbar Section -->
-                <section class="header-content">
-                    <section class="row">
-                        <section class="col-sm-6">
+                <div class="header-content">
+                    <div class="row">
+                        <div class="col-sm-6">
                             <h1>OZEL <br>Test Text For Design</h1>
                             <p>Test Paragraph for design</p>
                             <a href="#"><i class="fas fa-play"></i> More</a>
-                        </section>
-                    </section>
-                </section>
-            </section>
-        </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- End Header Section -->
@@ -119,43 +112,43 @@
     <!-- Start Benefits Section -->
 
     <section class="benefits">
-        <section class="container">
-            <section class="serve-boxes">
-                <section class="row">
-                    <section class="col-md-4">
-                        <section class="ser-box one wow bounceInLeft" data-wow-duration="1s" data-wow-offset="200">
-                            <section class="overlay"></section>
+        <div class="container">
+            <div class="serve-boxes">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="ser-box one wow bounceInLeft" data-wow-duration="1s" data-wow-offset="200">
+                            <div class="overlay"></div>
                             <img src="assets/images/user.png" alt="Services Image">
                             <h3>Services Name</h3>
                             <hr>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus alias in beatae dolorem quod praesentium repudiandae repellendus doloremque, sed hic illum expedita, excepturi cupiditate commodi! Placeat mollitia adipisci ipsam.</p>
                             <a href="#">Read More</a>
-                        </section>
-                    </section>
-                    <section class="col-md-4">
-                        <section class="ser-box two wow bounceInUp" data-wow-duration="1s" data-wow-offset="200">
-                            <section class="overlay"></section>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ser-box two wow bounceInUp" data-wow-duration="1s" data-wow-offset="200">
+                            <div class="overlay"></div>
                             <img src="assets/images/user.png" alt="Services Image">
                             <h3>Services Name</h3>
                             <hr>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus alias in beatae dolorem quod praesentium repudiandae repellendus doloremque, sed hic illum expedita, excepturi cupiditate commodi! Placeat mollitia adipisci ipsam.</p>
                             <a href="#">Read More</a>
-                        </section>
-                    </section>
-                    <section class="col-md-4">
-                        <section class="ser-box three wow bounceInRight" data-wow-duration="1s" data-wow-offset="200">
-                            <section class="overlay"></section>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ser-box three wow bounceInRight" data-wow-duration="1s" data-wow-offset="200">
+                            <div class="overlay"></div>
                             <img src="assets/images/user.png" alt="Services Image">
                             <h3>Services Name</h3>
                             <hr>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus alias in beatae dolorem quod praesentium repudiandae repellendus doloremque, sed hic illum expedita, excepturi cupiditate commodi! Placeat mollitia adipisci ipsam.</p>
                             <a href="#">Read More</a>
-                        </section>
-                    </section>
-                </section>
-            </section>
-            <section class="row">
-                <section class="col-md-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <div class="media wow fadeIn" data-wow-duration="1s" data-wow-offset="200">
                         <i class="fas fa-comments"></i>
                         <div class="media-body">
@@ -163,8 +156,8 @@
                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
                       </div>
-                </section>
-                <section class="col-md-6">
+                </div>
+                <div class="col-md-6">
                     <div class="media wow fadeIn" data-wow-duration="1s" data-wow-offset="200">
                         <i class="fas fa-comments"></i>
                         <div class="media-body">
@@ -172,10 +165,10 @@
                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
                       </div>
-                </section>
-            </section>
-            <section class="row">
-                <section class="col-md-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <div class="media wow fadeIn" data-wow-duration="1s" data-wow-offset="200">
                         <i class="fas fa-comments"></i>
                         <div class="media-body">
@@ -183,8 +176,8 @@
                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
                       </div>
-                </section>
-                <section class="col-md-6">
+                </div>
+                <div class="col-md-6">
                     <div class="media wow fadeIn" data-wow-duration="1s" data-wow-offset="200">
                         <i class="fas fa-comments"></i>
                         <div class="media-body">
@@ -192,33 +185,33 @@
                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
                       </div>
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End Benefits Section -->
 
     <!-- Start Why Us Section -->
 
-    <section class="why">
-        <section class="container">
+    <div class="why">
+        <div class="container">
             <h3 class="text-center heading-bold">Why Choose Us</h3>
-            <section class="row">
-                <section class="col-md-6">
-                    <section class="why-img wow fadeInLeft" data-wow-duration="1s" data-wow-offset="200">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="why-img wow fadeInLeft" data-wow-duration="1s" data-wow-offset="200">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="Why Us Image">
-                    </section>
-                </section>
-                <section class="col-md-6">
-                    <section class="why-content wow fadeInRight" data-wow-duration="1s" data-wow-offset="200">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="why-content wow fadeInRight" data-wow-duration="1s" data-wow-offset="200">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptas delectus, repellendus corporis pariatur enim dolores nobis? Sapiente doloremque illum omnis, voluptatibus, odio tempora id sequi hic aut non aliquam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate sed amet excepturi perspiciatis, placeat rem ratione praesentium nesciunt deserunt totam, id est quidem, animi et hic molestiae ipsum quaerat atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusamus consequatur ipsam, fuga tempora eaque minima modi quia officiis debitis reprehenderit corrupti perspiciatis iure a dolores illo. Ad, ipsum similique.</p>
                         <a href="#">See more</a>
-                    </section>
-                </section>
-            </section>
-        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End Why Us Section -->
@@ -227,49 +220,49 @@
 
     <!-- End Our why Section -->
     <section class="our-why text-center">
-        <section class="container">
+        <div class="container">
             <h3 class="heading-bold">State Of The Art Techniques</h3>
-            <section class="row">
-                <section class="col-sm-4">
-                    <section class="tecno-box one wow flipInY" data-wow-duration="1s" data-wow-offset="200">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="tecno-box one wow flipInY" data-wow-duration="1s" data-wow-offset="200">
                         <h3>why Name</h3>
-                        <section class="tecno-img">
+                        <div class="tecno-img">
                             <a class="fas fa-play" href="#"></a>
                             <img src="assets/images/why.jpg" alt="why Image">
-                        </section>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic quod neque fugit quibusdam repellat autem omnis, dolorem nihil sint! Nihil, eveniet! Id deleniti natus error qui et quam eius.</p>
-                    </section>
-                </section>
-                <section class="col-sm-4">
-                    <section class="tecno-box two wow flipInY" data-wow-duration="1s" data-wow-offset="200">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="tecno-box two wow flipInY" data-wow-duration="1s" data-wow-offset="200">
                         <h3>why Name</h3>
-                        <section class="tecno-img ">
+                        <div class="tecno-img ">
                             <a class="fas fa-play" href="#"></a>
                             <img src="assets/images/why.jpg" alt="why Image">
-                        </section>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic quod neque fugit quibusdam repellat autem omnis, dolorem nihil sint! Nihil, eveniet! Id deleniti natus error qui et quam eius.</p>
-                    </section>
-                </section>
-                <section class="col-sm-4">
-                    <section class="tecno-box three wow flipInY" data-wow-duration="1s" data-wow-offset="200">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="tecno-box three wow flipInY" data-wow-duration="1s" data-wow-offset="200">
                         <h3>why Name</h3>
-                        <section class="tecno-img ">
+                        <div class="tecno-img ">
                             <a class="fas fa-play" href="#"></a>
                             <img src="assets/images/why.jpg" alt="why Image">
-                        </section>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic quod neque fugit quibusdam repellat autem omnis, dolorem nihil sint! Nihil, eveniet! Id deleniti natus error qui et quam eius.</p>
-                    </section>
-                </section>
-            </section>
-        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Start Our Steps Section -->
 
     <section class="steps">
-        <section class="container">
+        <div class="container">
             <h3 class="text-center heading-bold">Steps To Go</h3>
-            <section class="row">
-                <section class="col-md-4">
+            <div class="row">
+                <div class="col-md-4">
                     <div class="media">
                         <i class="fab fa-whatsapp"></i>
                         <div class="media-body">
@@ -284,12 +277,12 @@
                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
                         </div>
                     </div>
-                </section>
-                <section class="col-md-4 text-center">
-                    <section class="steps-contacts">
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="steps-contacts">
                         <a class="active" href="#" data-class="phone">Phone</a>
                         <a href="#" data-class="email">Email</a>
-                    </section>
+                    </div>
                     <form class="contact-inputs" action="">
                         <input type="email" name="email" placeholder="Enter Email" class="email form-control">
                         <input type="text" name="phone" placeholder="Enter Phone" class="phone form-control">
@@ -298,8 +291,8 @@
                         <span>name@name.com</span>
                         <i class="fas fa-play"></i>
                     </a>
-                </section>
-                <section class="col-md-4">
+                </div>
+                <div class="col-md-4">
                     <div class="media">
                         <i class="fab fa-whatsapp"></i>
                         <div class="media-body">
@@ -314,9 +307,9 @@
                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
                         </div>
                     </div>
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End Our Steps Section -->
@@ -324,20 +317,20 @@
     <!-- Start Instagram Gallary Section -->
 
     <section class="gallary">
-        <section class="container">
-            <section class="row">
-                <section class="col-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
                     <h3 class="heading-bold">Instagram</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam consequuntur sequi, totam hic quasi nam nostrum ipsam soluta mollitia, asperiores beatae, autem obcaecati non rerum quas excepturi reiciendis unde.</p>
-                </section>
-                <section class="col-md-6">
+                </div>
+                <div class="col-md-6">
                     <a href="#"><i class="fab fa-instagram"></i> Follow</a>
-                </section>
-            </section>
+                </div>
+            </div>
             
             <div class="clearfix"></div>
-            <section class="slides">
-                <section class="slider text-center">
+            <div class="slides">
+                <div class="slider text-center">
                     <img src="assets/images/why.jpg" alt="Slder Image">
                     <img src="assets/images/why.jpg" alt="Slder Image">
                     <img src="assets/images/why.jpg" alt="Slder Image">
@@ -350,99 +343,136 @@
                     <img src="assets/images/why.jpg" alt="Slder Image">
                     <img src="assets/images/why.jpg" alt="Slder Image">
                     <img src="assets/images/why.jpg" alt="Slder Image">
-                </section>
-                <section class="controls">
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right"></i>
-                </section>
-            </section>
-        </section>
+                </div>
+                <div class="controls">
+                    <i class="fas fa-chevron-left left"></i>
+                    <i class="fas fa-chevron-right right"></i>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End Instagram Gallary Section -->
         
     <!-- Start Follow Us Section -->
     <section class="follow">
-        <section class="container">
-            <section class="row">
-                <section class="col-md-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
                     <h3 class="heading-bold">Follow Us On Social Media</h3>
-                </section>
-                <section class="col-md-5 text-center">
+                </div>
+                <div class="col-md-5 text-center">
                     <a class="google" href="#">
                         <img src="assets/images/googleSign.png" alt="">
                     </a>
                     <a class="apple" href="#">
                         <img src="assets/images/apple.png" alt="">
                     </a>
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End Follow Us Section -->
 
     <!-- Start Testi Section -->
 
     <section class="testi">
-        <section class="container">
+        <div class="container">
             <h3 class="text-center heading-bold">Test Testi Heading</h3>
             <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <section class="testi-boxes">
-                <section class="row">
-                    <section class="col-md-4">
-                        <section class="testi-box wow slideInLeft "data-wow-duration="1s" data-wow-offset="200">
-                            <i class="fas fa-quote-left"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
-                            <section class="rates">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </section>
-                            <div class="client-info">
-                                <img src="assets/images/user.png" alt="Client Img">
-                                <h4>Client Name</h4>
-                            </div>
-                        </section>
-                    </section>
-                    <section class="col-md-4">
-                        <section class="testi-box wow slideInLeft" data-wow-duration="1s" data-wow-offset="200">
-                            <i class="fas fa-quote-left"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
-                            <section class="rates">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </section>
-                            <div class="client-info">
-                                <img src="assets/images/user.png" alt="Client Img">
-                                <h4>Client Name</h4>
-                            </div>
-                        </section>
-                    </section>
-                    <section class="col-md-4">
-                        <section class="testi-box wow slideInLeft" data-wow-duration="1s" data-wow-offset="200">
-                            <i class="fas fa-quote-left"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
-                            <section class="rates">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </section>
-                            <div class="client-info">
-                                <img src="assets/images/user.png" alt="Client Img">
-                                <h4>Client Name</h4>
-                            </div>
-                        </section>
-                    </section>
-                </section>
-            </section>
-        </section>
+            <div class="testi-boxes">
+                <div class="testi-box wow slideInLeft "data-wow-duration="1s" data-wow-offset="200">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
+                    <div class="rates">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/user.png" alt="Client Img">
+                        <h4>Client Name</h4>
+                    </div>
+                </div>
+                <div class="testi-box wow slideInLeft "data-wow-duration="1s" data-wow-offset="200">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
+                    <div class="rates">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/user.png" alt="Client Img">
+                        <h4>Client Name</h4>
+                    </div>
+                </div>
+                <div class="testi-box wow slideInLeft "data-wow-duration="1s" data-wow-offset="200">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
+                    <div class="rates">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/user.png" alt="Client Img">
+                        <h4>Client Name</h4>
+                    </div>
+                </div>
+                <div class="testi-box wow slideInLeft "data-wow-duration="1s" data-wow-offset="200">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
+                    <div class="rates">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/user.png" alt="Client Img">
+                        <h4>Client Name</h4>
+                    </div>
+                </div>
+                <div class="testi-box wow slideInLeft "data-wow-duration="1s" data-wow-offset="200">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
+                    <div class="rates">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/user.png" alt="Client Img">
+                        <h4>Client Name</h4>
+                    </div>
+                </div>
+                <div class="testi-box wow slideInLeft "data-wow-duration="1s" data-wow-offset="200">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur vero delectus itaque fuga, non dolorem mollitia, numquam, officiis rerum necessitatibus aliquam culpa sunt cupiditate reprehenderit impedit. Placeat, quibusdam ab.</p>
+                    <div class="rates">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/user.png" alt="Client Img">
+                        <h4>Client Name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End Testi Section -->
@@ -450,74 +480,74 @@
     <!-- Start youtube Section -->
 
     <section class="youtube">
-        <section class="container">
-            <section class="row">
-                <section class="col-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
                     <h3 class="heading-bold">Youtube</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam consequuntur sequi, totam hic quasi nam nostrum ipsam soluta mollitia, asperiores beatae, autem obcaecati non rerum quas excepturi reiciendis unde.</p>
-                </section>
-                <section class="col-md-6">
+                </div>
+                <div class="col-md-6">
                     <a href="#"><i class="fab fa-youtube"></i> Subscripe</a>
-                </section>
-            </section>
+                </div>
+            </div>
             <div class="clearfix"></div>
-            <section class="slides">
-                <section class="sliding text-center">
-                    <section class="slide-img">
+            <div class="slides">
+                <div class="sliding text-center">
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                    <section class="slide-img">
+                    </div>
+                    <div class="slide-img">
                         <a class="fas fa-play" href="#"></a>
                         <img src="assets/images/why.jpg" alt="why Image">
-                    </section>
-                </section>
-                <section class="controls">
+                    </div>
+                </div>
+                <div class="controls">
                     <i class="fas fa-chevron-left"></i>
                     <i class="fas fa-chevron-right"></i>
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End youtube Section -->
@@ -525,10 +555,10 @@
     <!-- Start Contact Us Section -->
 
     <section class="contact-us">
-        <section class="container">
-            <section class="row">
-                <section class="col-md-6">
-                    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact">
                         <h3 class="heading-bold">Contact Us</h3>
                         <form method="POST" action="">
                             <div class="form-group">
@@ -553,10 +583,10 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                           </form>
-                    </section>
-                </section>
-                <section class="col-md-6">
-                    <section class="faq">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="faq">
                         <h3 class="heading-bold">FAQ</h3>
                         <div id="accordion" class="accordion">
                             <div class="card">
@@ -606,10 +636,10 @@
                               </div>
                             </div>
                           </div>
-                    </section>
-                </section>
-            </section>
-        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End Contact Us Section -->
@@ -617,32 +647,32 @@
     <!-- Start latest News Section -->
 
     <section class="news">
-        <section class="container">
+        <div class="container">
             <h3 class="text-center heading-bold">Latest News</h3>
-            <section class="row">
-                <section  class="col-md-4">
+            <div class="row">
+                <div  class="col-md-4">
                     <a href="#" class="new-card">
                         <img src="assets/images/why.jpg" alt="News">
                         <h4>New Heading</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto accusamus praesentium modi nobis porro aspernatur eos provident </p>
                     </a>
-                </section>
-                <section  class="col-md-4">
+                </div>
+                <div  class="col-md-4">
                     <a href="#" class="new-card">
                         <img src="assets/images/why.jpg" alt="News">
                         <h4>New Heading</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto accusamus praesentium modi nobis porro aspernatur eos provident </p>
                     </a>
-                </section>
-                <section class="col-md-4">
+                </div>
+                <div class="col-md-4">
                     <a href="#" class="new-card">
                         <img src="assets/images/why.jpg" alt="News">
                         <h4>New Heading</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto accusamus praesentium modi nobis porro aspernatur eos provident </p>
                     </a>
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End latest News Section -->
@@ -650,9 +680,9 @@
     <!-- Start Info Section -->
 
     <section class="info">
-        <section class="container">
-            <section class="row">
-                <section class="col-md-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
                     <div class="media">
                         <i class="fas fa-phone"></i>
                         <div class="media-body">
@@ -660,8 +690,8 @@
                           <p>Cras sit amet nibh libero, in gravida</p>
                         </div>
                     </div>
-                </section>
-                <section class="col-md-4">
+                </div>
+                <div class="col-md-4">
                     <div class="media">
                         <i class="fas fa-phone"></i>
                         <div class="media-body">
@@ -669,8 +699,8 @@
                           <p>Cras sit amet nibh libero, in gravida</p>
                         </div>
                     </div>
-                </section>
-                <section class="col-md-4">
+                </div>
+                <div class="col-md-4">
                     <div class="media">
                         <i class="fas fa-phone"></i>
                         <div class="media-body">
@@ -678,9 +708,9 @@
                           <p>Cras sit amet nibh libero, in gravida</p>
                         </div>
                     </div>
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- End Info Section -->
@@ -688,11 +718,11 @@
     <!-- Start Footer Section -->
     <footer>
         <div class="overlay">
-            <section class="container">
-                <section class="footer-content">
-                    <section class="row">
-                        <section class="col-md-3">
-                            <section class="foot-about">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="foot-about">
                                 <h4>About Company</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus alias molestias nobis veritatis facilis quos </p>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia delectus nesciunt totam blanditiis. Repellendus laboriosam, debitis, deleniti veritatis cupiditate </p>
@@ -703,10 +733,10 @@
                                     <li><a class="fab fa-youtube" href="#"></a></li>
                                     <li><a class="fas fa-search" href="#"></a></li>
                                 </ul>
-                            </section>
-                        </section>
-                        <section class="col-md-3">
-                            <section class="foot-quick">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="foot-quick">
                                 <h4>Quick Links</h4>
                                 <ul class="list-unstyled">
                                     <li><a href="#">Testing</a></li>
@@ -717,10 +747,10 @@
                                     <li><a href="#">Testing</a></li>
                                     <li><a href="#">Testing</a></li>
                                 </ul>
-                            </section>
-                        </section>
-                        <section class="col-md-3">
-                            <section class="foot-news">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="foot-news">
                                 <h4>latest News</h4>
                                 <div class="media">
                                     <img src="assets/images/why.jpg" alt="Latest">
@@ -743,9 +773,9 @@
                                       <p>Cras sit amet nibh libero, in gravida </p> 
                                     </div>
                                 </div>
-                            </section>
-                        </section>
-                        <section class="col-md-3">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
                             <section class="foot-services">
                                 <h4>Our Services</h4>
                                 <ul class="list-unstyled">
@@ -765,26 +795,27 @@
                                     <input type="email" name="email" placeholder="Enter Your Email" />
                                     <button type="submit"><i class="fas fa-envelope"></i></button>
                                 </form>
-                            </section>
-                        </section>
-                    </section>
-                </section>
-            </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- Start Copywrite Section -->
 
-    <!-- Start Copywrite Section -->    
+      
     <section class="Copyright text-center">
-        <section class="container">
+        <div class="container">
             <p>Copyright &copy; Lorem ipsum dolor sit amet </p>
-            <section class="copy-links">
+            <div class="copy-links">
                 <a href="#">About</a> |
                 <a href="#">Services</a> |
                 <a href="#">privacy</a>
-            </section>
-        </section>
+            </div>
+        </div>
     </section>
+     <!-- End Copywrite Section --> 
     <!-- End Footer Section -->
 
     <!-- Start Scripts Files  -->

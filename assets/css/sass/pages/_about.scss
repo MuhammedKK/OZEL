@@ -1,0 +1,45 @@
+/* Start Header Section */
+
+header {
+    .overlay {
+        padding:0;
+    }
+}
+
+/* End Header Section */
+
+/* Start Why Section */
+
+.why {
+    h3 {
+        margin-bottom:45px;
+    }
+    .why-content {
+        .why-info {
+            margin-bottom:25px;
+            overflow: hidden;
+            .info-icon {
+                font-size: 35px;
+                float: left;
+                width:10%;
+                margin-right:2%;
+            }
+            .info-content {
+                float: left;
+                width:88%;
+                color:#696868;
+                font-size: 17px;
+                margin-bottom: 0;
+            }
+            @media (max-width:767px) {
+                .info-icon {
+                    font-size: 23px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* End Why Section */
+

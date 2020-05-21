@@ -1,0 +1,223 @@
+/* Edit Navbar */
+
+
+/* Start Blogs Page */
+
+
+/********************* Edit  Header **********************/
+header {
+    .overlay {
+        .blog-header {
+            padding: 20px;
+        }
+    }
+}
+
+
+
+/********************* Most Viwe  **********************/
+
+.blog-most-view {
+    padding:50px 0;
+    .blog-card {
+        position: relative;
+        margin-bottom: 20px;
+        .card-over {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.3);
+            p {
+                position: absolute;
+                bottom: -16px;
+                padding: 10px 20px;
+                background-color: rgba(0,0,0,.5);
+                color:#fff;
+            }
+            @media (max-width:767px) {
+                p {
+                    max-height: 63px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        .main {
+            background-color: rgba(36,193,120,.6);
+        }
+    }
+}
+
+/********************* Blog Articles  **********************/
+
+.blogs {
+    .blog-arts {
+        margin-right:20px;
+        .art {
+            border-top:3px solid $main-color;
+            border-bottom:3px solid $sub-color;
+            padding:10px 15px;
+            margin-bottom: 20px;
+            h3 {
+                margin-bottom: 25px;
+            }
+            .post {
+                background-color: #f9f9f9;
+                margin-bottom: 20px;
+                h6,p {
+                    padding:10px;
+                }
+                h6 {
+                    font-weight: bold;
+                    color:#666;
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                }
+                p{
+                    color:#AAA;
+                    line-height: 1.8;
+                }
+            }
+            .media {
+                overflow: hidden;
+                margin-bottom: 22px;
+                img {
+                    margin-right:1%;
+                    width:50%;
+                }
+                .media-body {
+                    margin-left:10px;
+                    h5 {
+                        font-size: 16px;
+                         color: #000; 
+                        line-height: 1.8;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 14px;                    
+                    }
+                }
+            }
+            .posts {
+                position: relative;
+                .post {
+                    margin:0 10px 50px;
+                }
+                .slick-dots {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        border:1px solid #000;
+                        background-color: #000;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        button {
+                            display: none;
+                        }
+                    }
+                    .slick-active {
+                        background-color: $main-color;
+                        border:1px solid $main-color;
+                    }
+
+                }
+            }
+        }
+    }
+    .blog-trends {
+        .art {
+            border-top:3px solid $main-color;
+            border-bottom:3px solid $sub-color;
+            padding:10px 15px;
+            margin-bottom: 20px;
+            h3 {
+                margin-bottom: 25px;
+            }
+            .col-md-4 {
+                padding-left: 5px;
+                padding-right: 5px;
+                .post {
+                    
+                    color: #fff;
+                    margin-bottom: 20px;
+                    i {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        margin-top: 15px;
+                    }
+                    h6 {
+                        font-size: 14px;
+                        margin-top: 16px;
+                        padding: 10px;
+                    }
+                }
+                .facebook {
+                    background-color: #3b5998;
+                }
+                .twitter {
+                    background-color: #1da1f2;
+                }
+                .pinterest {
+                    background-color: #e32229;
+                }
+                .google {
+                    background-color: #dd4b39;
+                }
+                .instagram {
+                    background-color: #5e93be;
+                }
+                .you {
+                    background-color: #eb1a21;
+                }
+            }
+        }
+        .media {
+            overflow: hidden;
+            margin-bottom: 22px;
+            img {
+                margin-right:1%;
+                width:50%;
+            }
+            .media-body {
+                margin-left:10px;
+                h5 {
+                    font-size: 16px;
+                     color: #000; 
+                    line-height: 1.8;
+                }
+                p {
+                    color: #fff;
+                    font-size: 14px;                    
+                }
+            }
+        }
+    }
+    .famous {
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .post {
+        p {
+            font-size: 14px;
+            color:#999;
+            line-height: 1.8;
+        }
+    }
+}
+
+/* End Blogs Page */

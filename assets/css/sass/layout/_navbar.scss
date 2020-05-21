@@ -61,45 +61,65 @@
 
 /* Start Navbar Section */
 
-.navbar {
-    background: none;
-    padding:0;
-    .navbar-brand {
-        color:$main-color;
+nav {
+    padding: 10px 0;
+    overflow: hidden;
+    .logo {
         font-size: 40px;
-        &:hover {
-            color:$main-color;
+        float: left;
+        width:40%;
+        a {
+            color:$main-color
         }
     }
-    .nav-link {margin-right:10px;display: none;}
-    .nav-link,.fa-bars  {
-        color:#fff !important;
-        font-size: 17px;
+    .links {
+        float: left;
+        padding-top: 20px;
+        display: none;
+        li {
+            display:inline-block;
+            margin-right:20px;
+            a {
+                color:#fff;
+            }
+        }
+        .fa-times {
+            display: none;
+        }
     }
-    .fa-bars, .fa-times {
+    i {
         cursor: pointer;
-        font-size: 22px;
-    }
-    .navbar-collapse {
-        justify-content: flex-end;
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+        font-size: 20px;
     }
     @media (max-width:767px) {
-        .navbar-toggler-icon {
-            color:#fff !important;
-        }   
-        .nav-link {
+        .links-open {
             display: block;
-        }
-        .fa-bars, .fa-times {
-            display: none;
-        }
-    }
-    @media (min-width:768px) and (max-width:991px) { 
-        .nav-link {
-            display: block;
-        }
-        .fa-bars, .fa-times {
-            display: none;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            background-color: $sub-color;
+            color:#fff;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+            li {
+                display: block;
+                text-align: center;
+                margin-bottom: 30px;
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+            }
+            i.fa-times {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+            }
         }
     }
 }

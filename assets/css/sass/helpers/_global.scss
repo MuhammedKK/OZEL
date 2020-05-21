@@ -1,7 +1,7 @@
 /* General Rules */
 
 /* Colors Settings */
-$main-color:#00d6a3;
+$main-color:#24c178;
 $sub-color: #2c3f5c ;
 $para-color: #999;
 $footer-color: #033b4a;
@@ -92,3 +92,70 @@ img {
     }
   }
 /* End Loading Page */
+
+
+/* Start Play Pulse */
+
+@keyframes pulse {
+    0% {
+        transform: scale(.5);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+
+/* Start Search popup */
+.popup {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,.9); /* Black with a little bit see-through */
+    .overlay-content {
+        position: relative;
+        top: 46%;
+        width: 80%;
+        text-align: center;
+        margin-top: 30px;
+        margin: auto;
+    }
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;
+        &:hover {
+            color: #ccc;
+        }
+    }
+    input {
+        padding: 15px;
+        font-size: 17px;
+        border: none;
+        float: left;
+        width: 90%;
+        background: white;
+    }
+    button {
+        float: left;
+        width: 10%;
+        padding: 15px;
+        background: $main-color;
+        color:#fff;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+}
+/* End Search popup */

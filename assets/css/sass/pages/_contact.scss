@@ -1,0 +1,141 @@
+.contact-head {
+    background-image: none;
+    .overlay {
+        background-color: rgba(8,69,113);
+        background-image: none;
+    }
+}
+
+
+/* Start Contact Us Page */
+
+.contact-page {
+    background-image:url('../images/header.jpg');
+    background-size:cover;
+    background-position:center;
+    .overlay {
+        background-color:rgba(0,0,0,0.8);
+        padding:50px;
+        .contact-info {
+            background-color:#fff;
+            padding:40px;
+            border-radius:20px;
+            .details {
+                margin-bottom: 30px;
+                h3 {
+                    font-size: 32px;
+                    position:relative;
+                    padding-bottom: 10px;
+                    margin-bottom: 30px;
+                    &:after {
+                        content: '';
+                        position:absolute;
+                        top:100%;
+                        left:0;
+                        background-color:#18517a;
+                        width:230px;
+                        height:2px;
+                    }
+                }
+                p {
+                    line-height: 1.8;
+                    &:last-of-type {
+                        font-weight: 500;
+                        color:#333
+                    }
+                }
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right:10px;
+                        a {
+                            font-size: 35px;
+                            color:#2a3f5a
+                        }
+                    }
+                }
+                @media (max-width:767px) {
+                    h3 {
+                        font-size: 22px;
+                        &:after {
+                            content: '';
+                            width:100px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    ul {
+                        li {
+                            a {
+                                font-size: 30px;
+                            }
+                        }
+                    }
+
+                }
+            }
+            .media {
+                margin-bottom: 20px;
+                i {
+                    font-size: 30px;
+                    margin-right: 20px;
+                    margin-top: 0px;
+                    padding: 10px;
+                    border: 1px solid #fff;
+                    background-color:#2a3f5a;
+                    color:#fff;
+                    border-radius:5px;
+                }
+                .media-body {
+                    color:#2a3f5a;  
+                    margin-top:10px;
+                    word-wrap: break-word;
+                    h5 {
+                        font-size: 19px;
+                    }
+                    p {
+                        margin-bottom: 5px;
+                    }
+                }
+                @media (max-width:767px) {
+                    i {
+                        font-size: 20px;
+                        margin-top:10px;
+                    }
+                    .media-body {
+                        h5 {
+                            font-size: 17px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            form {
+                input, textarea {
+                    border:1px solid #2a3f5a;
+                    margin-bottom: 10px;
+                }
+                input.send {
+                    display: block;
+                    background-color: #2a3f5a;
+                    color:#fff;
+                    width: 100%;
+                    margin-top: 10px;
+                    padding: 10px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    @media (max-width:767px) {
+        .overlay {
+            padding:30px 10px;
+        }
+    }
+
+}
+
+/* End Contact Us Page */
